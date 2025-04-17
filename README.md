@@ -1,33 +1,59 @@
-#📘 DSA-Implementations
-This repository contains clean and well-documented implementations of common Data Structures and Algorithms in Java (or another language if you prefer). It’s designed for learning, interview prep, and quick reference.
+# 📚 DSA-Implementations
 
-#🧠 What's Inside
-###🔹 Data Structures
-✅ Linked List (Singly & Doubly)
+A comprehensive collection of **Data Structures** and **Algorithms** implemented in Java. This repository is built for learning, interviews, and mastering core problem-solving concepts in computer science.
 
-✅ Stack (Array & Linked List)
+---
 
-✅ Queue (Array & Linked List)
+## 🚀 Overview
 
-✅ Binary Tree / Binary Search Tree
+This project contains hand-crafted implementations of commonly asked **data structures** and **algorithms** with clean code, comments, and usage examples. Ideal for:
 
-✅ HashMap (custom implementation)
+- 📘 University coursework
+- 🧠 Interview preparation
+- 💡 Concept revision
 
-✅ Graph (Adjacency List & Matrix)
+---
 
-✅ Heap (Min & Max)
+## 🔧 Implemented Topics
 
-###🔹 Algorithms
-✅ Searching (Linear, Binary)
+### 📌 Data Structures
 
-✅ Sorting (Bubble, Selection, Insertion, Merge, Quick)
+- [x] Singly & Doubly Linked List
+- [x] Stack (Array & Linked List)
+- [x] Queue (Array & Linked List)
+- [x] Binary Trees & Binary Search Tree
+- [x] Hash Table (custom implementation)
+- [x] Graph (Adjacency List/Matrix)
+- [x] Heap (Min-Heap / Max-Heap)
+- [ ] Trie (Coming Soon)
 
-✅ Recursion & Backtracking
+### 🧠 Algorithms
 
-✅ Dynamic Programming Basics
+- [x] Sorting: Bubble, Selection, Insertion, Merge, Quick
+- [x] Searching: Linear & Binary Search
+- [x] Recursion & Backtracking
+- [x] Graph Traversal: BFS, DFS
+- [x] Dijkstra’s Shortest Path
+- [x] Topological Sort
+- [x] Dynamic Programming (Fibonacci, Knapsack)
+- [ ] Segment Tree (Coming Soon)
 
-✅ Graph Traversal (BFS, DFS)
+---
 
-✅ Dijkstra’s Algorithm
+## 🛠 Getting Started
+### 🙌 Acknowledgments
+Inspired by real interview experiences and university coursework
 
-✅ Topological Sort
+Algorithms based on CLRS & GeeksforGeeks logic
+
+### ⭐️ Show Your Support
+If you found this project helpful, consider giving it a ⭐️ on GitHub. It helps others find it too!
+
+---
+Let me know if you'd like:
+- Language-specific README (Java, C++)
+- GitHub Pages version
+
+Happy coding! 🚀
+---
+
