@@ -18,24 +18,24 @@ This project contains hand-crafted implementations of commonly asked **data stru
 
 ### 📌 Data Structures
 
-- [x] Singly & Doubly Linked List
-- [x] Stack (Array & Linked List)
-- [x] Queue (Array & Linked List)
-- [x] Binary Trees & Binary Search Tree
-- [x] Hash Table (custom implementation)
-- [x] Graph (Adjacency List/Matrix)
-- [x] Heap (Min-Heap / Max-Heap)
+- [x] Singly List
+- [ ] Stack (Array & Linked List)
+- [ ] Queue (Array & Linked List)
+- [ ] Binary Trees & Binary Search Tree
+- [ ] Hash Table (custom implementation)
+- [ ] Graph (Adjacency List/Matrix)
+- [ ] Heap (Min-Heap / Max-Heap)
 - [ ] Trie (Coming Soon)
 
 ### 🧠 Algorithms
 
-- [x] Sorting: Bubble, Selection, Insertion, Merge, Quick
-- [x] Searching: Linear & Binary Search
-- [x] Recursion & Backtracking
-- [x] Graph Traversal: BFS, DFS
-- [x] Dijkstra’s Shortest Path
-- [x] Topological Sort
-- [x] Dynamic Programming (Fibonacci, Knapsack)
+- [ ] Sorting: Bubble, Selection, Insertion, Merge, Quick
+- [ ] Searching: Linear & Binary Search
+- [ ] Recursion & Backtracking
+- [ ] Graph Traversal: BFS, DFS
+- [ ] Dijkstra’s Shortest Path
+- [ ] Topological Sort
+- [ ] Dynamic Programming (Fibonacci, Knapsack)
 - [ ] Segment Tree (Coming Soon)
 
 ---
