@@ -12,6 +12,11 @@ public class HashTable {
 
     }
     private LinkedList<Entry> entries[] = new LinkedList[5];
+
+    private int hash(int key){
+        return key % entries.length;
+    }
+
     public void put(int key , String value){
         var index = hash(key) ;
         if (entries[index] == null)
@@ -25,8 +30,32 @@ public class HashTable {
         }
         bucket.addLast(new Entry(key , value));
     }
-    private int hash(int key){
 
-        return key % entries.length;
+    public String get(int key){
+        int index = hash(key);
+        var bucket = entries[index] ;
+        if(bucket != null){
+            for(var entry : bucket){
+                if(entry.key == key)
+                    return entry.value;
+            }
+        }
+        return null ;
     }
+
+    public void remove(int key){
+        int index = hash(key);
+        var bucket = entries[index] ;
+        if(bucket != null){
+            for (var entry : bucket)
+            {
+                if(entry.key == key) {
+                    bucket.remove(entry);
+                    return;
+                }
+            }
+        }
+         throw new IllegalStateException();
+    }
+
 }
