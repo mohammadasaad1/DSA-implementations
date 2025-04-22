@@ -91,4 +91,36 @@ public class LinkedList {
         }
         return array ;
     }
+
+//    LEET-CODE PROBLEMS HERE =>
+// EASY :
+    public Node mergeTwoLists(Node list1, Node list2) {
+    var dummyHead = new Node(-1);
+    var current = dummyHead ;
+    while (list1 != null || list2 != null){
+        if(list1 == null) {
+            current.next = list2;
+            break;
+        }
+        else if(list2 == null){
+            current.next = list1 ;
+            break;
+        }
+        // no null yet
+        if(list1.data >= list2.data){
+            current.next = list1;
+            list1 = list1.next ;
+            if (list1 != null)
+                current = list1;
+        }
+        else{
+            current.next = list2;
+            list2 = list2.next ;
+            if(list2 != null)
+                current = list2;
+        }
+    }
+    return dummyHead.next;
+}
+
 }
