@@ -18,6 +18,7 @@ public class HashTable {
     }
 
     public void put(int key , String value){
+        // we can refactor it later : ) task
         var index = hash(key) ;
         if (entries[index] == null)
             entries[index] = new LinkedList<>();
@@ -32,30 +33,44 @@ public class HashTable {
     }
 
     public String get(int key){
-        int index = hash(key);
-        var bucket = entries[index] ;
-        if(bucket != null){
-            for(var entry : bucket){
-                if(entry.key == key)
-                    return entry.value;
-            }
-        }
-        return null ;
+        var entry = getEntry(key);
+        return (entry != null) ? entry.value : null ;
+
     }
 
     public void remove(int key){
-        int index = hash(key);
-        var bucket = entries[index] ;
-        if(bucket != null){
-            for (var entry : bucket)
-            {
-                if(entry.key == key) {
-                    bucket.remove(entry);
-                    return;
-                }
-            }
+//        int index = hash(key);
+//        var bucket = entries[index] ;
+//        if(bucket != null){
+//            for (var entry : bucket)
+//            {
+//                if(entry.key == key) {
+//                    bucket.remove(entry);
+//                    return;
+//                }
+//            }
+//        } refactoring to =>
+
+        var entry = getEntry(key);
+        if(entry != null){
+            getBucket(key).remove(getEntry(key));
+            return;
         }
+
          throw new IllegalStateException();
     }
-
+    private LinkedList<Entry> getBucket(int key){
+        return entries[hash(key)] ;
+    }
+    private Entry getEntry(int key){
+        var bucket = getBucket(key) ;
+        if(bucket != null){
+            for(var entry : bucket)
+            {
+                if(entry.key == key)
+                    return entry;
+            }
+        }
+        return null;
+    }
 }
